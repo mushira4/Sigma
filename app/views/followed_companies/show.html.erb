@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @followed_company.user %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @followed_company.company %>
+</p>
+
+<p>
+  <b>Preference:</b>
+  <%= @followed_company.preference %>
+</p>
+
+
+<%= link_to 'Edit', edit_followed_company_path(@followed_company) %> |
+<%= link_to 'Back', followed_companies_path %>
