@@ -1,4 +1,8 @@
 Sigma::Application.routes.draw do
+  resources :followed_companies
+
+  resources :preferences
+
   resources :promotions
 
   devise_for :users
